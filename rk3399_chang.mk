@@ -55,5 +55,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.version = 1.0.0 \
     ro.product.ota.host = www.rockchip.com:2300 \
     ro.sf.lcd_density=280 \
-    vendor.hwc.device.primary=HDMI-A
+    vendor.hwc.device.primary=HDMI-A \
+    ro.adb.secure=0 \
+    persist.sys.timezone=Europe/Oslo
+
 
