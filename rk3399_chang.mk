@@ -57,6 +57,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=280 \
     vendor.hwc.device.primary=HDMI-A \
     ro.adb.secure=0 \
+	ro.debuggable=1 \
+	persist.vendor.internet.adb.enable = 1 \
     persist.sys.timezone=Europe/Oslo
 
 
