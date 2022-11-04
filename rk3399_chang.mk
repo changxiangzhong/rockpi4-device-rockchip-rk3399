@@ -53,7 +53,8 @@ PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/apns-full-conf.xml:system
 PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/spn-conf.xml:system/etc/spn-conf.xml
 
 # It's not allowed to put a file in /data partition. Factory reset would remove everything
-# PRODUCT_COPY_FILES += vendor/chang/mylogger/data1:/data/mylogger_output
+PRODUCT_COPY_FILES += vendor/chang/mylogger/allente_fallback_token:system/allente_fallback_token
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.version = 1.0.0 \
     ro.product.ota.host = www.rockchip.com:2300 \
