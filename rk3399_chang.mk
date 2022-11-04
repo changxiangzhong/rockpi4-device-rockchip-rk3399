@@ -51,6 +51,9 @@ PRODUCT_PACKAGES += \
 # Get the long list of APNs
 PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/apns-full-conf.xml:system/etc/apns-conf.xml
 PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/spn-conf.xml:system/etc/spn-conf.xml
+
+# It's not allowed to put a file in /data partition. Factory reset would remove everything
+# PRODUCT_COPY_FILES += vendor/chang/mylogger/data1:/data/mylogger_output
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.version = 1.0.0 \
     ro.product.ota.host = www.rockchip.com:2300 \
