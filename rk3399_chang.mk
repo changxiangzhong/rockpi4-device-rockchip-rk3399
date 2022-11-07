@@ -47,6 +47,8 @@ BUILD_WITH_WIDEVINE := true
 
 PRODUCT_PACKAGES += \
     SoundRecorder
+PRODUCT_PACKAGES += \
+    vim
 
 # Get the long list of APNs
 PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/apns-full-conf.xml:system/etc/apns-conf.xml
