@@ -15,14 +15,15 @@ cd u-boot/                                                      &&\
 ./make.sh rk3399                                                &&\
 cd ../kernel/                                                   &&\
 make chang_defconfig                                            &&\
-make rk3399-rockpi-4b.img -j4                                   &&\
+make rk3399-rockpi-4b.img -j32                                  &&\
 cd ..                                                           &&\
 source build/envsetup.sh                                        &&\
 lunch 59                                                        &&\
 make -j 32
 
 ###### For newly setup project, execute the following #####
-#cp device/rockchip/common/mkimage.sh  ./
+cp device/rockchip/common/mkimage.sh  ./
+ln -s RKTools/linux/Linux_Pack_Firmware/rockdev/ rockdev
 
 ##### Fix android-gpt.sh
 # Add the following before the print
