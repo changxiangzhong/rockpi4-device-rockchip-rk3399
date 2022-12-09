@@ -51,6 +51,8 @@ PRODUCT_PACKAGES += \
     vim
 PRODUCT_PACKAGES += \
     hello-lkm-client
+PRODUCT_PACKAGES += \
+    hello.default
 
 # Get the long list of APNs
 PRODUCT_COPY_FILES += vendor/rockchip/common/phone/etc/apns-full-conf.xml:system/etc/apns-conf.xml
